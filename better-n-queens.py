@@ -1,5 +1,7 @@
 
 import random
+import time
+
 
 def conflicts(queens: list, N: int, col: int):
     confs = [-1 for _ in range(N)]
@@ -34,6 +36,8 @@ def move(queens, N, col):
 
 
 def main(N):
+
+	t0 = time.time()
 	queens = [-1 for _ in range(N)]
 
 	# initialize queens in all rows
@@ -92,9 +96,11 @@ def main(N):
 		
 		print(f"Iterate Minimum Conflict {i}")
 
+	t1 = time.time()
+	print(f'\n{t1-t0} seconds')
 	return queens, i
 
 
-main(10000)
+main(1000)
 
 
