@@ -4,10 +4,12 @@ from random import randint
 class Board:
     def __init__(self, n:int, board:str = None):
         self.n = n
-        self.conflicts = []
+        self.rowconflicts = []
+        self.posdiagconflicts = []
+        self.negdiagconflicts = []
         self.queens = {}
 
-        
+
     def __str__(self):
         sb = []
         sb.append("-" * (self.n+2) + "\n")
