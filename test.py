@@ -1,12 +1,7 @@
 
 import random
 
-confs = [1, 0, 2, 1, 0, 2, 1, 1, 1, 0]
+test = [1,2,3,4,5]
 
-
-
-
-min_conf = min(confs)
-rand_min = random.choice([i for i in range(len(confs)) if confs[i] == min_conf])
-
-print(rand_min)
+for row,col in enumerate(test):
+    print(row, col)

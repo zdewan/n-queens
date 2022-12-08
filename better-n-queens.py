@@ -97,10 +97,11 @@ def main(N):
 		print(f"Iterate Minimum Conflict {i}")
 
 	t1 = time.time()
+
 	print(f'\n{t1-t0} seconds')
 	return queens, i
 
 
-main(1000)
+main(1000000)
 
 
